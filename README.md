@@ -9,7 +9,7 @@ description: Introduction to MiGA @ XSEDE
 \*\*\*\*[**MiGA @ XSEDE**](https://xsede.microbial-genomes.org/) is the publicly accessible deployment of the [Microbial Genomes Atlas \(MiGA\)](https://manual.microbial-genomes.org/) into the infrastructure of the [Extreme Science and Engineering Discovery Environment \(XSEDE\)](https://www.xsede.org/). The objective of **MiGA @ XSEDE** is to provide end users with a web-accessible implementation of MiGA for high-throughput analyses. For example, if you have a collection of hundreds of genomes and want transferable, summarized results from MiGA, but don't have the local infrastructure to perform these analyses, this is the best option for you.
 
 {% hint style="info" %}
- [**MiGA @ XSEDE**](https://xsede.microbial-genomes.org/) seeks to provide high-throughput access to MiGA without local deployments
+ [**MiGA @ XSEDE**](https://xsede.microbial-genomes.org/) provides high-throughput access to MiGA without local deployments
 {% endhint %}
 
 ## What can I expect from MiGA @ XSEDE?
