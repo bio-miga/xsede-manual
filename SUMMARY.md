@@ -2,7 +2,7 @@
 
 * [About MiGA @ XSEDE](README.md)
 * [Federated Login](federated-login.md)
-* [Selection an Application](selection-an-application.md)
+* [Selecting an Application](selection-an-application.md)
 
 ## Applications
 

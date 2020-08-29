@@ -2,7 +2,7 @@
 description: What application can help me in MiGA @ XSEDE?
 ---
 
-# Selection an Application
+# Selecting an Application
 
 Different applications in [**MiGA @ XSEDE**](https://xsede.microbial-genomes.org/) automate commonly used workflows in MiGA. Explore the different tabs to identify the workflow that works for you.
 
