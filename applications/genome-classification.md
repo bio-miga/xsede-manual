@@ -1,6 +1,6 @@
 # Genome Classification
 
-Classify genomes using the TypeMat MiGA database as a reference: All genomes from prokaryotic type material available in NCBI.
+Classify query genomes against the TypeMat MiGA genome database as a reference: All genomes from prokaryotic type material available in NCBI.
 
 {% hint style="info" %}
 Use this application to taxonomically classify genomes
@@ -12,7 +12,7 @@ One or more genomes \(assemblies\) from any taxonomic affiliation within _Bacter
 
 ## Parameters
 
-This application doesn't require any additional parameters.
+This application doesn't have any additional parameters.
 
 {% page-ref page="../allocation.md" %}
 

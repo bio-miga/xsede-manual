@@ -14,7 +14,7 @@ Different applications in [**MiGA @ XSEDE**](https://xsede.microbial-genomes.org
 {% tab title="Indexing" %}
 ## Database Indexing
 
-Index a custom MiGA database with a collection of genomes, including calculation of all-vs-all AAI and ANI matrixes.
+Index a collection of genomes to use as a custom MiGA database to query an unknown genome against this database or search the genomes of the database against each other by calculating the all-vs-all AAI and ANI matrixes.
 
 {% page-ref page="applications/database-indexing.md" %}
 {% endtab %}
@@ -22,7 +22,7 @@ Index a custom MiGA database with a collection of genomes, including calculation
 {% tab title="Classification" %}
 ## Genome Classification
 
-Genome-based typing of genomes within a well-characterized species.Classify genomes using the TypeMat MiGA database as a reference: All genomes from prokaryotic type material available in NCBI.
+Classify query genomes against the TypeMat MiGA genome database as a reference: All genomes from prokaryotic type material available in NCBI.
 
 {% page-ref page="applications/genome-classification.md" %}
 {% endtab %}
@@ -30,7 +30,7 @@ Genome-based typing of genomes within a well-characterized species.Classify geno
 {% tab title="Typing " %}
 ## Genome Typing
 
-Genome-based typing of genomes within a well-characterized species.
+Perform a fine sequence \(Average Nucleotide Identity or ANI\) and gene content diversity analysis for genome-based typing of query genomes within a well-characterized species.
 
 {% page-ref page="applications/genome-typing.md" %}
 {% endtab %}
