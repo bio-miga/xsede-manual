@@ -8,10 +8,12 @@ Once you have selected the appropriate application, it's a good idea to make sur
 
 ## Select a Queue and Node Count
 
-There is no need to ever change the queue, you can simply use **shared**. Also, the current configuration of **MiGA @ XSEDE** won't use more than 1 node \(even if more are available\), so you should also leave this as is. If you think your task needs much more resources, [contact us](http://support.microbial-genomes.org/) to enable multi-node execution.
+There is no need to ever change the queue, you can simply use **compute**.
+
+For the node count, the maximum number of cores you can use per node is 24. Therefore, once you decide the total core count \(see below\), come back here to determine the number of nodes. As a general rule, you should set the largest node count that doesn't excede the total core count or the maximum available nodes \(72\). For example, if you need 60 cores, you should set the node count to 60. But if you need 140 nodes, you should set the node count to 72.
 
 {% hint style="info" %}
-Nothing to change here
+Use the **smaller value** between the **total core count** \(below\) and **72**
 {% endhint %}
 
 ## Total core count
@@ -19,7 +21,7 @@ Nothing to change here
 The maximum core count is 1,728. The maximum number of cores MiGA will use is the number of genomes. If you have fewer than 1,728 genomes, set this value to the number of genomes you have.
 
 {% hint style="info" %}
-Use as many cores as the number of genomes in the collection \(up to 1,728\)
+Use the **smaller value** between the **number of genomes** and **1,728**
 {% endhint %}
 
 ## Wall Time Limit
@@ -27,7 +29,7 @@ Use as many cores as the number of genomes in the collection \(up to 1,728\)
 This is the maximum number of minutes that the task will be running. If your task exceeds this number, it will be terminated without completing. However, if you pick a number too high, the task will stay a very long time in queue, so it's important to get this approximately right \(but slightly overestimating\).
 
 {% hint style="info" %}
-Estimate the limit based on the type of application used
+Estimate the limit based on the type of **application** used
 {% endhint %}
 
 ### For Database Indexing and Genome Dereplication
