@@ -16,10 +16,10 @@ Nothing to change here
 
 ## Total core count
 
-The maximum core count is 23. The maximum number of cores MiGA will use is the number of genomes. If you have fewer than 23 genomes, lower this value to the number of genomes you have.
+The maximum core count is 1,728. The maximum number of cores MiGA will use is the number of genomes. If you have fewer than 1,728 genomes, set this value to the number of genomes you have.
 
 {% hint style="info" %}
-Use as many cores as the number of genomes in the collection \(up to 23\)
+Use as many cores as the number of genomes in the collection \(up to 1,728\)
 {% endhint %}
 
 ## Wall Time Limit
