@@ -6,9 +6,11 @@ description: How to select the resources to use in MiGA @ XSEDE
 
 Once you have selected the appropriate application, it's a good idea to make sure the allocation settings are optimal for your task. We provide default settings that work well in most cases for a given application, but it's always better to double-check.
 
-## Select a Queue and Node Count
+## Select a Queue
 
 There is no need to ever change the queue, you can simply use **compute**.
+
+## Node Count
 
 For the node count, the maximum number of cores you can use per node is 24. Therefore, once you decide the total core count \(see below\), come back here to determine the number of nodes. As a general rule, you should set the largest node count that doesn't excede the total core count or the maximum available nodes \(72\). For example, if you need 60 cores, you should set the node count to 60. But if you need 140 nodes, you should set the node count to 72.
 
