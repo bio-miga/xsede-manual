@@ -6,24 +6,35 @@ description: How to select the resources to use in MiGA @ XSEDE
 
 Once you have selected the appropriate application, it's a good idea to make sure the allocation settings are optimal for your task. We provide default settings that work well in most cases for a given application, but it's always better to double-check.
 
+## Total core count
+
+The first step is to determine the number of cores you will need. The maximum core count is 4,096. The maximum number of cores MiGA will use is the number of genomes. If you have fewer than 4,096 genomes, set this value to the number of genomes you have.
+
+{% hint style="info" %}
+Use the **smaller value** between the **number of genomes** and **4,096**
+{% endhint %}
+
 ## Select a Queue
 
-There is no need to ever change the queue, you can simply use **compute**.
+{% hint style="info" %}
+For a total core count ≤ 128: use **shared** \(default\)  
+****For a total core count &gt; 128: use **compute**
+{% endhint %}
 
 ## Node Count
 
-For the node count, the maximum number of cores you can use per node is 24. Therefore, once you decide the total core count \(see below\), come back here to determine the number of nodes. As a general rule, you should set the largest node count that doesn't excede the total core count or the maximum available nodes \(72\). For example, if you need 60 cores, you should set the node count to 60. But if you need 140 nodes, you should set the node count to 72.
+#### In the shared queue
 
 {% hint style="info" %}
-Use the **smaller value** between the **total core count** \(below\) and **72**
+Use **1**
 {% endhint %}
 
-## Total core count
+**In the compute queue**
 
-The maximum core count is 1,728. The maximum number of cores MiGA will use is the number of genomes. If you have fewer than 1,728 genomes, set this value to the number of genomes you have.
+You need to estimate the minimum number of nodes that can accomodate your job. For that, simply take the total core count above, divide it by 128 \(maximum cores por node\), and round it up. For example, if you have 300 cores: 300/128 = 2.34, so you should request 3 nodes.
 
 {% hint style="info" %}
-Use the **smaller value** between the **number of genomes** and **1,728**
+Divide the **total core count** by **128** and **round up**
 {% endhint %}
 
 ## Wall Time Limit
