@@ -17,8 +17,8 @@ Use the **smaller value** between the **number of genomes** and **4,096**
 ## Select a Queue
 
 {% hint style="info" %}
-For a total core count ≤ 128: use **shared** \(default\)  
-****For a total core count &gt; 128: use **compute**
+For a total core count &lt; 128: use **shared** \(default\)  
+****For a total core count ≥ 128: use **compute**
 {% endhint %}
 
 ## Node Count
